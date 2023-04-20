@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: "Archivo", sans-serif;
+    color: #000;
+}
+
+.dropdown-menu {
+    border: 1px solid #000000;
+    border-radius: 0;
+    padding: 0;
+
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    top: 50px;
+    left: 20px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -90px !important;
+    /*margin-top: 0.6rem !important;*/
+}
+
+.dropdown-menu::before {
+    content: " ";
+    height: 15px;
+    width: 15px;
+    display: block;
+    background: white;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 5px;
+    top: -8px;
+    z-index: -500;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 12.5px 10px;
+    border-bottom: 1px solid #EDF3F2;
+    color: #212529 !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #EDF3F2;
+}
+
+.dropdown-menu .dropdown-item:active {
+    background: #E1EEEC;
+}
+
+.dropdown-menu .dropdown-item.selected {
+    background: #48FFCB !important;
+}

@@ -1,0 +1,13 @@
+@keyframes CubeFlipper {
+    0%,
+    80% {
+        transform: rotateX(90deg);
+        position: relative;
+        top: -10px;
+    }
+    100% {
+        transform: rotateX(0deg);
+        position: relative;
+        top: 0;
+    }
+}
