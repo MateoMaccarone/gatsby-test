@@ -9,7 +9,7 @@ const MarkdownToHtml = ({body}:{body:string}) => <ReactMarkdown remarkPlugins={[
 const Dashboard = ({ data }) => {
     return (
         <article>
-            <p>Posts</p>
+            <p>Posts :D</p>
             {
                 data.allDatoCmsPost.edges.map((post:any) => {
                     return (
